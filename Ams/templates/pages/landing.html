@@ -1,0 +1,548 @@
+{% load tailwind % }
+<div class="font-sans antialiased bg-stone-50 text-slate-800">
+  <!-- Navigation Bar -->
+  <nav
+    class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200"
+  >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <div class="flex items-center gap-2">
+          <span class="text-2xl font-bold text-emerald-700 tracking-tight"
+            >Kheti <span class="text-amber-600">Bari</span></span
+          >
+        </div>
+        <div
+          class="hidden md:flex space-x-8 text-sm font-medium text-slate-600"
+        >
+          <a href="#features" class="hover:text-emerald-700 transition"
+            >Why Choose Us</a
+          >
+          <a href="#features-list" class="hover:text-emerald-700 transition"
+            >Features</a
+          >
+          <a href="#pricing" class="hover:text-emerald-700 transition"
+            >Pricing</a
+          >
+        </div>
+        <div>
+          <a
+            href="#cta"
+            class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg shadow-sm transition"
+          >
+            Start Free
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section
+    class="relative overflow-hidden bg-gradient-to-b from-emerald-50/50 via-white to-stone-50 pt-20 pb-16 sm:pb-24 lg:pt-32"
+  >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="lg:grid lg:grid-cols-12 lg:gap-12 items-center">
+        <div
+          class="lg:col-span-7 max-w-2xl mx-auto lg:mx-0 text-center lg:text-left"
+        >
+          <span
+            class="inline-flex items-center px-3 py-1 text-xs font-semibold text-emerald-800 bg-emerald-100 rounded-full mb-4"
+          >
+            Smart Farming Platform
+          </span>
+          <h1
+            class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 leading-none"
+          >
+            Grow Your Farm,<br class="hidden sm:inline" />
+            <span class="text-emerald-600">Grow Your Profits</span>
+          </h1>
+          <p class="mt-6 text-base sm:text-lg text-slate-600 leading-relaxed">
+            Kheti Bari is a comprehensive farm management platform designed
+            specifically for Indian farmers. Track crops, manage expenses,
+            monitor income, and make data-driven decisions—all in one beautiful
+            dashboard.
+          </p>
+          <div
+            class="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center"
+          >
+            <a
+              href="#cta"
+              class="w-full sm:w-auto text-center px-8 py-4 text-base font-bold text-white bg-emerald-600 hover:bg-emerald-700 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5"
+            >
+              Start Free
+            </a>
+            <a
+              href="#"
+              class="w-full sm:w-auto text-center px-8 py-4 text-base font-bold text-slate-700 bg-white hover:bg-slate-50 rounded-xl shadow-sm border border-slate-200 transition"
+            >
+              View Demo
+            </a>
+          </div>
+          <p class="mt-4 text-xs text-slate-500 font-medium">
+            No credit card required • Free forever plan available
+          </p>
+        </div>
+
+        <!-- Interactive Dashboard Graphic Placeholder -->
+        <div class="lg:col-span-5 mt-12 lg:mt-0 relative flex justify-center">
+          <div
+            class="w-full max-w-md bg-white border border-slate-200 shadow-xl rounded-2xl p-6 relative"
+          >
+            <div
+              class="flex justify-between items-center border-b border-slate-100 pb-4 mb-4"
+            >
+              <div>
+                <span
+                  class="text-xs font-bold text-slate-400 uppercase tracking-wider"
+                  >Kharif Season Summary</span
+                >
+                <h3 class="text-lg font-bold text-slate-800">
+                  Rice Crop (Basmati)
+                </h3>
+              </div>
+              <span
+                class="px-2.5 py-1 text-xs font-semibold rounded-full bg-emerald-100 text-emerald-800"
+                >Active</span
+              >
+            </div>
+            <div class="space-y-4">
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-stone-50 p-3 rounded-xl border border-slate-100">
+                  <span class="text-xs text-slate-500 block">Total Income</span>
+                  <span class="text-lg font-bold text-emerald-600"
+                    >₹1,42,000</span
+                  >
+                </div>
+                <div class="bg-stone-50 p-3 rounded-xl border border-slate-100">
+                  <span class="text-xs text-slate-500 block"
+                    >Total Expense</span
+                  >
+                  <span class="text-lg font-bold text-rose-600">₹45,200</span>
+                </div>
+              </div>
+              <div class="w-full bg-slate-100 rounded-full h-2.5">
+                <div
+                  class="bg-emerald-500 h-2.5 rounded-full"
+                  style="width: 68%"
+                ></div>
+              </div>
+              <div class="flex justify-between text-xs text-slate-500">
+                <span
+                  >Net Margin: <strong class="text-slate-800">68%</strong></span
+                >
+                <span class="font-bold text-emerald-700">Profit: ₹96,800</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid Section -->
+  <section
+    id="features"
+    class="py-20 sm:py-28 bg-white border-y border-slate-200"
+  >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2
+          class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight"
+        >
+          Why Choose Kheti Bari?
+        </h2>
+        <p class="mt-4 text-lg text-slate-600">
+          Built by farmers, for farmers. Everything you need to run your farm
+          efficiently.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div
+          class="p-6 bg-stone-50 border border-slate-200 rounded-2xl hover:shadow-md transition"
+        >
+          <div
+            class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center font-bold text-xl mb-5"
+          >
+            📈
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Complete Dashboard</h3>
+          <p class="mt-2 text-slate-600 text-sm leading-relaxed">
+            Real-time insights into your farm's financial performance with
+            detailed charts and KPIs.
+          </p>
+        </div>
+        <!-- Feature 2 -->
+        <div
+          class="p-6 bg-stone-50 border border-slate-200 rounded-2xl hover:shadow-md transition"
+        >
+          <div
+            class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center font-bold text-xl mb-5"
+          >
+            🌾
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Crop Management</h3>
+          <p class="mt-2 text-slate-600 text-sm leading-relaxed">
+            Track multiple crops across Indian agricultural seasons with
+            detailed expense tracking per crop.
+          </p>
+        </div>
+        <!-- Feature 3 -->
+        <div
+          class="p-6 bg-stone-50 border border-slate-200 rounded-2xl hover:shadow-md transition"
+        >
+          <div
+            class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center font-bold text-xl mb-5"
+          >
+            💰
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Financial Tracking</h3>
+          <p class="mt-2 text-slate-600 text-sm leading-relaxed">
+            Monitor all expenses and income with category-wise breakdown and
+            profit margin analysis.
+          </p>
+        </div>
+        <!-- Feature 4 -->
+        <div
+          class="p-6 bg-stone-50 border border-slate-200 rounded-2xl hover:shadow-md transition"
+        >
+          <div
+            class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center font-bold text-xl mb-5"
+          >
+            📱
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Mobile Ready</h3>
+          <p class="mt-2 text-slate-600 text-sm leading-relaxed">
+            Fully responsive design perfect for managing your farm from the
+            field on any device.
+          </p>
+        </div>
+        <!-- Feature 5 -->
+        <div
+          class="p-6 bg-stone-50 border border-slate-200 rounded-2xl hover:shadow-md transition"
+        >
+          <div
+            class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center font-bold text-xl mb-5"
+          >
+            🛡️
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Secure & Private</h3>
+          <p class="mt-2 text-slate-600 text-sm leading-relaxed">
+            Your farm data is secure and private. We never share or sell your
+            information.
+          </p>
+        </div>
+        <!-- Feature 6 -->
+        <div
+          class="p-6 bg-stone-50 border border-slate-200 rounded-2xl hover:shadow-md transition"
+        >
+          <div
+            class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center font-bold text-xl mb-5"
+          >
+            🤝
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Easy to Use</h3>
+          <p class="mt-2 text-slate-600 text-sm leading-relaxed">
+            Intuitive interface designed specifically for farmers with no
+            technical background needed.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process / 3-Step Setup Section -->
+  <section class="py-20 bg-stone-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">
+          Simple 3-Step Setup
+        </h2>
+        <p class="mt-2 text-lg text-slate-600">
+          Get started with Kheti Bari in minutes
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+        <!-- Step 1 -->
+        <div class="text-center relative">
+          <div
+            class="w-12 h-12 mx-auto bg-emerald-600 text-white rounded-full flex items-center justify-center font-black shadow-md z-10 relative"
+          >
+            1
+          </div>
+          <h3 class="mt-6 text-lg font-bold text-slate-900">Sign Up</h3>
+          <p class="mt-2 text-sm text-slate-600 max-w-xs mx-auto">
+            Create your free account in seconds
+          </p>
+        </div>
+        <!-- Step 2 -->
+        <div class="text-center relative">
+          <div
+            class="w-12 h-12 mx-auto bg-emerald-600 text-white rounded-full flex items-center justify-center font-black shadow-md z-10 relative"
+          >
+            2
+          </div>
+          <h3 class="mt-6 text-lg font-bold text-slate-900">Add Your Crops</h3>
+          <p class="mt-2 text-sm text-slate-600 max-w-xs mx-auto">
+            Enter your crops and current season details
+          </p>
+        </div>
+        <!-- Step 3 -->
+        <div class="text-center relative">
+          <div
+            class="w-12 h-12 mx-auto bg-emerald-600 text-white rounded-full flex items-center justify-center font-black shadow-md z-10 relative"
+          >
+            3
+          </div>
+          <h3 class="mt-6 text-lg font-bold text-slate-900">Start Tracking</h3>
+          <p class="mt-2 text-sm text-slate-600 max-w-xs mx-auto">
+            Log expenses and income, track your farm
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comprehensive Feature List Checklist -->
+  <section
+    id="features-list"
+    class="py-20 bg-emerald-900 text-white overflow-hidden relative"
+  >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+            Everything You Need
+          </h2>
+          <p class="mt-4 text-emerald-200">
+            A precise engine tailormade to align with the core mechanics of
+            classic Indian agricultural rotations.
+          </p>
+          <ul class="mt-8 space-y-4 text-base text-emerald-100">
+            <li class="flex items-start gap-3">
+              <span class="text-amber-400">✔</span> Crop lifecycle tracking
+              (Kharif, Rabi, Summer)
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-amber-400">✔</span> Detailed expense
+              categorization
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-amber-400">✔</span> Income tracking per crop
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-amber-400">✔</span> Financial summary & profit
+              analysis
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-amber-400">✔</span> Expandable crop views with
+              inline expense entry
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-amber-400">✔</span> Dedicated crop-wise summary
+              page
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-amber-400">✔</span> Season-based filtering
+            </li>
+            <li class="flex items-start gap-3 text-emerald-300/70">
+              <span class="text-emerald-400/50">✦</span> Export-ready data
+              <span
+                class="ml-2 text-xs uppercase bg-emerald-800 text-emerald-200 px-2 py-0.5 rounded font-mono tracking-wider"
+                >Coming Soon</span
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mt-12 lg:mt-0 flex justify-center">
+          <div
+            class="p-8 bg-emerald-950/50 rounded-3xl border border-emerald-800 backdrop-blur-sm max-w-sm w-full text-center"
+          >
+            <span class="text-6xl block">🌾</span>
+            <p class="mt-4 text-sm text-emerald-200 italic">
+              "Tracking my cotton crop across the entire Kharif sequence has
+              never been this clear."
+            </p>
+            <span
+              class="block mt-4 text-xs font-bold tracking-wider uppercase text-amber-400"
+              >— Punjab Agro Cultivator</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Table -->
+  <section id="pricing" class="py-20 sm:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">
+          Simple, Transparent Pricing
+        </h2>
+        <p class="mt-2 text-lg text-slate-600">
+          No hidden fees. No credit card required.
+        </p>
+      </div>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch max-w-5xl mx-auto"
+      >
+        <!-- Tier 1: Free -->
+        <div
+          class="border border-slate-200 rounded-2xl p-8 bg-stone-50 flex flex-col justify-between"
+        >
+          <div>
+            <h3 class="text-lg font-bold text-slate-900">Free</h3>
+            <p class="mt-2 text-xs text-slate-500">
+              Perfect for getting started
+            </p>
+            <div class="mt-4 flex items-baseline">
+              <span class="text-4xl font-black tracking-tight text-slate-900"
+                >₹0</span
+              >
+            </div>
+            <ul
+              class="mt-6 space-y-3 text-sm text-slate-600 border-t border-slate-200 pt-6"
+            >
+              <li class="flex items-center gap-2">
+                <span class="text-emerald-600 font-bold">✓</span> Up to 3 crops
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-emerald-600 font-bold">✓</span> Basic tracking
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-emerald-600 font-bold">✓</span> Current season
+                support
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-emerald-600 font-bold">✓</span> Mobile access
+              </li>
+            </ul>
+          </div>
+          <a
+            href="#"
+            class="mt-8 block w-full text-center px-4 py-2.5 text-sm font-bold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 rounded-lg transition"
+            >Get Started</a
+          >
+        </div>
+
+        <!-- Tier 2: Pro (Featured) -->
+        <div
+          class="border-2 border-emerald-600 rounded-2xl p-8 bg-white shadow-md relative flex flex-col justify-between transform lg:-translate-y-2"
+        >
+          <span
+            class="absolute top-0 right-6 transform -translate-y-1/2 bg-emerald-600 text-white text-xs font-extrabold tracking-wider uppercase px-3 py-1 rounded-full"
+            >Most Popular</span
+          >
+          <div>
+            <h3 class="text-lg font-bold text-slate-900">Pro</h3>
+            <p class="mt-2 text-xs text-slate-500">For growing farms</p>
+            <div class="mt-4 flex items-baseline">
+              <span class="text-4xl font-black tracking-tight text-slate-900"
+                >₹99</span
+              >
+              <span class="text-slate-500 text-sm ml-1">/month</span>
+            </div>
+            <ul
+              class="mt-6 space-y-3 text-sm text-slate-600 border-t border-slate-200 pt-6"
+            >
+              <li class="flex items-center gap-2">
+                <span class="text-emerald-600 font-bold">✓</span> Unlimited
+                crops
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-emerald-600 font-bold">✓</span> Advanced
+                analytics
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-emerald-600 font-bold">✓</span> PDF export
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-emerald-600 font-bold">✓</span> Priority
+                support
+              </li>
+            </ul>
+          </div>
+          <a
+            href="#"
+            class="mt-8 block w-full text-center px-4 py-2.5 text-sm font-bold text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg shadow transition"
+            >Get Started</a
+          >
+        </div>
+
+        <!-- Tier 3: Enterprise -->
+        <div
+          class="border border-slate-200 rounded-2xl p-8 bg-stone-50 flex flex-col justify-between"
+        >
+          <div>
+            <h3 class="text-lg font-bold text-slate-900">Enterprise</h3>
+            <p class="mt-2 text-xs text-slate-500">For farms at scale</p>
+            <div class="mt-4 flex items-baseline">
+              <span class="text-4xl font-black tracking-tight text-slate-900"
+                >Custom</span
+              >
+            </div>
+            <ul
+              class="mt-6 space-y-3 text-sm text-slate-600 border-t border-slate-200 pt-6"
+            >
+              <li class="flex items-center gap-2">
+                <span class="text-emerald-600 font-bold">✓</span> Custom
+                features
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-emerald-600 font-bold">✓</span> API access
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-emerald-600 font-bold">✓</span> Dedicated
+                support
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-emerald-600 font-bold">✓</span> Custom
+                integration
+              </li>
+            </ul>
+          </div>
+          <a
+            href="#"
+            class="mt-8 block w-full text-center px-4 py-2.5 text-sm font-bold text-slate-700 bg-white hover:bg-slate-50 border border-slate-200 rounded-lg transition"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section
+    id="cta"
+    class="bg-stone-100 py-16 sm:py-24 border-t border-slate-200"
+  >
+    <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+        Ready to Transform Your Farm?
+      </h2>
+      <p class="mt-4 text-base sm:text-lg text-slate-600 max-w-xl mx-auto">
+        Join thousands of Indian farmers already using Kheti Bari to optimize
+        their harvest.
+      </p>
+      <div class="mt-10">
+        <a
+          href="#"
+          class="inline-block px-8 py-4 text-base font-bold text-white bg-emerald-600 hover:bg-emerald-700 rounded-xl shadow-md transition transform hover:-translate-y-0.5"
+        >
+          Start Free Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer
+    class="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-500"
+  >
+    <p>&copy; {% now "Y" %} Kheti Bari Platform. All rights reserved.</p>
+  </footer>
+</div>
