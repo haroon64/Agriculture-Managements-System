@@ -1,12 +1,13 @@
 {% load static %}
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
-    <meta charset="UTF-8" />
-    <title>Django + Tailwind</title>
     <link rel="stylesheet" href="{% static 'dist/output.css' %}" />
+    {% include 'common/header.html' %}
   </head>
+
   <body>
-    <h1 class="text-3xl font-bold text-red-600">It works!</h1>
+    {% block content %} {% endblock %}
   </body>
+  {% include 'common/footer.html' %}
 </html>
