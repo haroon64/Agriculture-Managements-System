@@ -1,0 +1,13 @@
+{% load static %}
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <link rel="stylesheet" href="{% static 'dist/output.css' %}" />
+    {% include 'common/header.html' %}
+  </head>
+
+  <body>
+    {% block content %} {% endblock %}
+  </body>
+  {% include 'common/footer.html' %}
+</html>

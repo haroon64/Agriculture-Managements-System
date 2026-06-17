@@ -1,40 +1,7 @@
-{% load tailwind % }
+{% extends 'pages/base.html' %} {% block content %}
+
 <div class="font-sans antialiased bg-stone-50 text-slate-800">
   <!-- Navigation Bar -->
-  <nav
-    class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200"
-  >
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between h-16 items-center">
-        <div class="flex items-center gap-2">
-          <span class="text-2xl font-bold text-emerald-700 tracking-tight"
-            >Kheti <span class="text-amber-600">Bari</span></span
-          >
-        </div>
-        <div
-          class="hidden md:flex space-x-8 text-sm font-medium text-slate-600"
-        >
-          <a href="#features" class="hover:text-emerald-700 transition"
-            >Why Choose Us</a
-          >
-          <a href="#features-list" class="hover:text-emerald-700 transition"
-            >Features</a
-          >
-          <a href="#pricing" class="hover:text-emerald-700 transition"
-            >Pricing</a
-          >
-        </div>
-        <div>
-          <a
-            href="#cta"
-            class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg shadow-sm transition"
-          >
-            Start Free
-          </a>
-        </div>
-      </div>
-    </div>
-  </nav>
 
   <!-- Hero Section -->
   <section
@@ -58,7 +25,7 @@
           </h1>
           <p class="mt-6 text-base sm:text-lg text-slate-600 leading-relaxed">
             Kheti Bari is a comprehensive farm management platform designed
-            specifically for Indian farmers. Track crops, manage expenses,
+            specifically for Pakistani farmers. Track crops, manage expenses,
             monitor income, and make data-driven decisions—all in one beautiful
             dashboard.
           </p>
@@ -110,14 +77,14 @@
                 <div class="bg-stone-50 p-3 rounded-xl border border-slate-100">
                   <span class="text-xs text-slate-500 block">Total Income</span>
                   <span class="text-lg font-bold text-emerald-600"
-                    >₹1,42,000</span
+                    >Rs.1,42,000</span
                   >
                 </div>
                 <div class="bg-stone-50 p-3 rounded-xl border border-slate-100">
                   <span class="text-xs text-slate-500 block"
                     >Total Expense</span
                   >
-                  <span class="text-lg font-bold text-rose-600">₹45,200</span>
+                  <span class="text-lg font-bold text-rose-600">Rs.45,200</span>
                 </div>
               </div>
               <div class="w-full bg-slate-100 rounded-full h-2.5">
@@ -184,7 +151,7 @@
           </div>
           <h3 class="text-lg font-bold text-slate-900">Crop Management</h3>
           <p class="mt-2 text-slate-600 text-sm leading-relaxed">
-            Track multiple crops across Indian agricultural seasons with
+            Track multiple crops across Pakistani agricultural seasons with
             detailed expense tracking per crop.
           </p>
         </div>
@@ -318,7 +285,7 @@
           </h2>
           <p class="mt-4 text-emerald-200">
             A precise engine tailormade to align with the core mechanics of
-            classic Indian agricultural rotations.
+            classic Pakistani agricultural rotations.
           </p>
           <ul class="mt-8 space-y-4 text-base text-emerald-100">
             <li class="flex items-start gap-3">
@@ -401,7 +368,7 @@
             </p>
             <div class="mt-4 flex items-baseline">
               <span class="text-4xl font-black tracking-tight text-slate-900"
-                >₹0</span
+                >Rs.0</span
               >
             </div>
             <ul
@@ -442,7 +409,7 @@
             <p class="mt-2 text-xs text-slate-500">For growing farms</p>
             <div class="mt-4 flex items-baseline">
               <span class="text-4xl font-black tracking-tight text-slate-900"
-                >₹99</span
+                >Rs.99</span
               >
               <span class="text-slate-500 text-sm ml-1">/month</span>
             </div>
@@ -525,7 +492,7 @@
         Ready to Transform Your Farm?
       </h2>
       <p class="mt-4 text-base sm:text-lg text-slate-600 max-w-xl mx-auto">
-        Join thousands of Indian farmers already using Kheti Bari to optimize
+        Join thousands of Pakistani farmers already using Kheti Bari to optimize
         their harvest.
       </p>
       <div class="mt-10">
@@ -540,9 +507,6 @@
   </section>
 
   <!-- Footer -->
-  <footer
-    class="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-500"
-  >
-    <p>&copy; {% now "Y" %} Kheti Bari Platform. All rights reserved.</p>
-  </footer>
 </div>
+
+{% endblock %}
