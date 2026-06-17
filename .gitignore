@@ -4,3 +4,10 @@ __pycache__/
 db.sqlite3
 .env
 staticfiles/
+media/
+package-lock.json
+node_modules/
+dist/
+build/
+*.egg-info/
+package.json/
